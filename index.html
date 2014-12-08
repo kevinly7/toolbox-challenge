@@ -6,14 +6,33 @@
         <link rel="stylesheet" href="css/main.css"/>
     </head>
     <body>
-        <h1>Memory!</h1>
-        <button id="start">Start Game!</button>
-        <p id="elapsed-seconds"></p>
-        <p id="matches"></p>
-        <p id="remaining"></p>
-        <p id="misses"></p>
+        <main>
+            <section>
+                <h1>Memory!</h1>
+                <h3 id="how-to">How to play</h3>
+                <button id="start">Start Game!</button>
+                <p id="elapsed-seconds">Time Elapsed: 0</p>
+                <p id="matches">Matches: 0</p>
+                <p id="remaining">Remaining: 8</p>
+                <p id="misses">Missed: 0</p>
+                <div id="game-board"></div>
+            </section>
+        </main>
+        <div id="win">
+            <h1>YOU WIN!</h1>
+            <h2>Click here to reset the board!</h2>
+        </div>
+        <div id="instructions">
+            <div id="steps">
+                <img id="close-icon" src="img/close.png" alt="close button"/>
+                <h3>1. Click start game.</h3>
+                <h3>2. Click on a tile to flip it over.</h3>
+                <h3>3. You may only turn over two cards at a time.</h3>
+                <h3>4. The objective is to find like pairs</h3>
+                <h3>5. To win, flip over all the pairs.</h3>
+            </div>
+        </div>
 
-        <div id="game-board"></div>
 
         <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
